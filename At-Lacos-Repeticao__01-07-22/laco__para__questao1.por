@@ -11,7 +11,7 @@ programa
 		leia(ok)
 		
 		para(i = 1; i <= 4; i++){
-		     escreva("Insira aqui seu salário mensal: ")
+		     escreva("Insira aqui seu salário mensal:  ")
 		     leia(salario)
 		     escreva("Insira aqui quantos filhos você têm: ")
 		     leia(filhos)
@@ -46,7 +46,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1350; 
+ * @POSICAO-CURSOR = 465; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
