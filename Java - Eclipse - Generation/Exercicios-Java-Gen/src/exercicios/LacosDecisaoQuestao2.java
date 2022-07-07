@@ -5,22 +5,39 @@ import java.util.Scanner;
 
 public class LacosDecisaoQuestao2 {
 	public static void main(String[] args) {
-		int[] num = new int[3];
-		int mais;
+		int mais, a, b, c;
 		
 		Scanner leia = new Scanner(System.in);
-		
-		for(int i = 0; i < 3; i++) {
-			mais = i+1;//para numerar a ordem de inserção dos números
-			System.out.println("\nNos dê o " + mais + "° número inteiro: ");
-			num[i] = (leia.nextInt());
-		}
-		
-		Arrays.sort(num);//método para ordenar/exibir o array
-		System.out.println("\nOrdem Crescente: ");
-		for(int y = 0; y < num.length; y++) {//lenght em laço, imprime cada item de um array
-			System.out.print("[" + num[y] + "]");
-		}
+
+			System.out.println("\nNos dê três números inteiros: ");
+			a = leia.nextInt();
+			b = leia.nextInt();
+			c = leia.nextInt();
+			
+			if(a<=b && b<=c)
+			{
+				System.out.println("\nOrdem crescente: "+a+" , "+b+" , "+c);//a , b , c
+			}
+			else if(a<=c && c<=b)
+			{
+				System.out.println("\nOrdem crescente: "+a+" , "+c+" , "+b);
+			}
+			else if(b<=a && a<=c)
+			{
+				System.out.println("\nOrdem crescente: "+b+" , "+a+" , "+c);
+			}
+			else if(b<=c && c<=a)
+			{
+				System.out.println("\nOrdem crescente: "+b+" , "+c+" , "+a);
+			}
+			else if(c<=a && a<=b)
+			{
+				System.out.println("\nOrdem crescente: "+c+" , "+a+" , "+b);
+			}
+			else
+			{
+				System.out.println("\nOrdem crescente: "+c+" , "+b+" , "+a);
+			}
 		
 	}
 }
