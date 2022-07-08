@@ -19,5 +19,4 @@ public class LacosDecisaoQuestao1 {
 		}
 		System.out.println("\nMaior número: " + maiorNum);
 	}
-
 }
