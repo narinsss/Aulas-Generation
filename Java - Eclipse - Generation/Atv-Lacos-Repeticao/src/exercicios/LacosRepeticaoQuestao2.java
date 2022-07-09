@@ -15,7 +15,8 @@ public class LacosRepeticaoQuestao2 {
 //				impar = num;
 //			}
 			if(num % 2 == 0) {
-				num = par;
+				num++;
+				System.out.println(num);
 			}
 	    }
 
