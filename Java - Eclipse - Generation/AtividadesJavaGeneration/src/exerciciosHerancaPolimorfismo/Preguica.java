@@ -2,24 +2,19 @@ package exerciciosHerancaPolimorfismo;
 
 public class Preguica extends Animal{
 
-	private boolean subindo;
-
-	public Preguica(String habitoAlimentar, String habitat, String classe, int idade, String nome) {
-		super(habitoAlimentar, habitat, classe, idade, nome);
+	public Preguica(int idade, String nome, String especie) {
+		super(idade, nome, especie);
 	}
 	
-	void subirArvore() {
-		if(this.subindo == true){
-			System.out.println("Preguiça subindo.....");
-		}else {
-			System.out.println("Preguiça sentada em um galho......");
-		}
+	public Preguica(String habitoAlimentar, String habitat, String classe, String especie) {
+		super(habitoAlimentar, habitat, classe, especie);
 	}
+
 	
 	public static void main(String[] args) {
-		Animal cachorro = new Preguica("herbívoro", "arborícola", "mamífero", 7, "Lucy");
-		cachorro.setSom(true);
-		cachorro.emitirSom("preguica");
+		Animal preguica = new Preguica("herbívoro", "arborícola", "mamífero", "preguiça");
+		preguica.setSom(true);
+		preguica.emitirSom();
 	}
 
 

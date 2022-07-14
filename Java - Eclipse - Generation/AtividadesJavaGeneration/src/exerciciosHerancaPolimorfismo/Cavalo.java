@@ -2,24 +2,20 @@ package exerciciosHerancaPolimorfismo;
 
 public class Cavalo extends Animal{
 
-	private boolean correndo;
-
-	public Cavalo(String habitoAlimentar, String habitat, String classe, int idade, String nome) {
-		super(habitoAlimentar, habitat, classe, idade, nome);
+	public Cavalo(int idade, String nome, String especie) {
+		super(idade, nome, especie);
 	}
 	
-	void correr() {
-		if(this.correndo == true){
-			System.out.println("Cavalo correndo.....");
-		}else {
-			System.out.println("Cavalo paradoo......");
-		}
+	public Cavalo(String habitoAlimentar, String habitat, String classe, String especie) {
+		super(habitoAlimentar, habitat, classe, especie);
 	}
 	
 	public static void main(String[] args) {
-		Animal cachorro = new Cachorro("herbívoro", "doméstico", "mamífero", 18, "Flash");
-		cachorro.setSom(false);
-		cachorro.emitirSom("cavalo");
+		Animal cavalo = new Cavalo(18, "Flash", "cavalo");
+		cavalo.setSom(true);
+		cavalo.setCorrendo(true);
+		cavalo.emitirSom();
+		cavalo.correr();
 	}
 
 }

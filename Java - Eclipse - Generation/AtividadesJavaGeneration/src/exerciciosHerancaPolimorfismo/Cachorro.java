@@ -1,21 +1,21 @@
 package exerciciosHerancaPolimorfismo;
 
 public class Cachorro extends Animal{
-	public Cachorro(String habitoAlimentar, String habitat, String classe, int idade, String nome) {
-		super(habitoAlimentar, habitat, classe, idade, nome);
+	
+	//teste com dois construtores e como funcionam ao instanciá-los
+	public Cachorro(int idade, String nome, String especie) {
+		super(idade, nome, especie);
 	}
-	private boolean correndo;
-
-	void correr() {
-		if(this.correndo == true){
-			System.out.println("Cachorro correndo.....");
-		}else {
-			System.out.println("Cachorro parado......");
-		}
+	
+	public Cachorro(String habitoAlimentar, String habitat, String classe, String especie) {
+		super(habitoAlimentar, habitat, classe, especie);
 	}
+	
 	public static void main(String[] args) {
-		Animal cachorro = new Cachorro("Onívoro", "doméstico", "mamífero", 12, "Dowg");
+		Animal cachorro = new Cachorro(3, "Dowg", "cachorro");
 		cachorro.setSom(true);
-		cachorro.emitirSom("cachorro");
+		cachorro.emitirSom();
+		cachorro.setCorrendo(true);
+		cachorro.correr();
 	}
 }
