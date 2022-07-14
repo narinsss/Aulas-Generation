@@ -9,7 +9,7 @@ public class VetorQuestao2 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		for(int i = 0; i < 5; i++) {
+		for(int i = 0; i < lados.length; i++) {
 			cont++;
 			int y = i + 1;
 			System.out.println("Lance o dado a " + y + "° vez: ");
@@ -23,7 +23,7 @@ public class VetorQuestao2 {
 		}
 		
 		System.out.println("Jogadas: ");
-		for(int i = 0; i < 5; i++) {
+		for(int i = 0; i < lados.length; i++) {
 			System.out.print("[" + lados[i] + "]");
 		}
 		System.out.println("\nMédia: " + media);
