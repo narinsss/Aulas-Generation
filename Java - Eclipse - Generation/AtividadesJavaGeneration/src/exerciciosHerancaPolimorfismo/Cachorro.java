@@ -17,5 +17,6 @@ public class Cachorro extends Animal{
 		cachorro.emitirSom();
 		cachorro.setCorrendo(true);
 		cachorro.correr();
+		System.out.println(cachorro.getNome());
 	}
 }

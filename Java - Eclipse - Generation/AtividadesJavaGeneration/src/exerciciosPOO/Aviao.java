@@ -1,11 +1,11 @@
 package exerciciosPOO;
 
 public class Aviao {
-	private String companhia;
-	private int bagagemLimite = 23;
-	private int qntdAssentos = 350;
-	private int passageiros = 348;
-	private String piloto;
+	protected String companhia;
+	protected int bagagemLimite = 23;
+	protected int qntdAssentos = 350;
+	protected int passageiros = 348;
+	protected String piloto;
 	
 	//MÉTODOS PARA CALCULAR EXCESSO DE BAGAGEM
 	public void carga(int peso) {

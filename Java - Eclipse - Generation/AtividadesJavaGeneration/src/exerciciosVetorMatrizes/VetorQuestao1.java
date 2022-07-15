@@ -19,7 +19,7 @@ public class VetorQuestao1 {
 			}
 		}
 		System.out.println("Notas: ");
-		for(int i = 0; i < 5; i++) {
+		for(int i = 0; i < nota; i++) {
 			System.out.print("[" + notas[i] + "]");
 		}
 		
